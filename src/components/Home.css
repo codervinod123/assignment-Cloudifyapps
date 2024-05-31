@@ -1,0 +1,7 @@
+.custom-bg-image {
+    background-image: url('../assets/background/bg1.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1750px 1000px;
+}
