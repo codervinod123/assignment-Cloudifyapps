@@ -1,7 +1,31 @@
-.custom-bg-image {
+.bg-image {
     background-image: url('../assets/background/bg1.jpg');
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1750px 1000px;
+    background-size: contain;
+    background-size: 100vw 100vh;
 }
+
+.background-zoom {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-zoom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: zoomInOutBg 7s ease-in-out infinite;
+  }
+  
+  .background-zoom .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  

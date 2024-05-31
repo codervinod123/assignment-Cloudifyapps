@@ -63,10 +63,10 @@ const QuestionPaper = () => {
   return (
     <>
       {start ?
-        <div className='flex flex-col justify-center items-center mt-16  h-[336px] w-[700px] mx-auto'>
+        <div className='flex flex-col justify-center items-center mt-16  h-[336px] w-[750px] mx-auto gap-y-41px'>
           <h1 className='text-4xl text-center font-bold text-white'>Addition and Subtraction</h1>
           <h1 className='text-4xl text-center font-bold text-white'>Facts within 20</h1>
-          <p className='text-center py-2 text-white font-semibold max-w-[60%]'>Test your knowledge with the fllowing questions,Tap a card to flip it and uncover the answer, good luck</p>
+          <p className='text-center  text-white font-semibold max-w-[60%]'>Test your knowledge with the fllowing questions,Tap a card to flip it and uncover the answer, good luck</p>
           <button onClick={() => setStart(!start)} className='px-6 py-2 bg-yellow-500 text-black font-semibold rounded-full flex justify-center items-center gap-x-2 hover:scale-105 transition-all duration-500 group'><CgPlayButtonO size={"1.5rem"} className='group-hover:rotate-180' />Let's Play</button>
         </div>
 

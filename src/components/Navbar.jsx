@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import logo from "../assets/logo.svg"
+import logo from "../assets/Branding.svg"
 import { GiSpeaker } from "react-icons/gi";
 import { GiSpeakerOff } from "react-icons/gi";
 
@@ -8,16 +8,10 @@ const Navbar = () => {
 
     return (
         <nav className='flex justify-between p-[25px] h-[78px] '>
-            <div className='flex justify-center items-center gap-x-2'>
-                <div className=' h-[40px] w-[40px] bg-black rounded-full flex justify-center items-center'>
-                    <img className='h-[20px] text-black' src={logo} alt="" />
-                </div>
-                <div className='flex flex-col  text-white font-semibold'>
-                    <span className='text-[12px]'>Cloudifyapp pvt.Ltd</span>
-                    <span className='text-[10px]'>By John Doe</span>
-                </div>
+            <div className='flex justify-center items-center gap-x-2 cursor-pointer'>
+                <img className='h-[30px] text-black' src={logo} alt="" />
             </div>
-            <div className='cursor-pointer hover:bg-slate-400 h-8 w-8 rounded transition-all duration-500' onClick={() => setMikeState(!mikeState)}>
+            <div className='cursor-pointer text-white hover:bg-slate-400 h-8 w-8 rounded transition-all duration-500' onClick={() => setMikeState(!mikeState)}>
                 {
                     mikeState ? <GiSpeaker size={"2rem"} /> : <GiSpeakerOff size={"2rem"} />
                 }
